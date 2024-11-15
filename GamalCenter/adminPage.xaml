@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GamalCenter"
-      mc:Ignorable="d" 
+      mc:Ignorable="d" FontFamily="Cascadia Code"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="adminPage">
 
@@ -12,8 +12,56 @@
         <Grid.Background>
             <ImageBrush ImageSource="wallpaperflare.com_wallpaper (2).jpg"/>
         </Grid.Background>
-        
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Border Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
+                <Button Content="LogOut" Style="{StaticResource ButtonStyle}" Click="LogOut_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+
+           
+            <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                <Label Content="Course" Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <ComboBox Name="combo" Height="50" Width="150" FontSize="24" Foreground="#FF1F1F1F" Margin="0,5,0,0">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF00F5C9" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                <Label Content="Grade" Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <ComboBox Name="combo1" Height="50" Width="150" FontSize="24" Foreground="#FF1F1F1F" Margin="0,5,0,0">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF00F5C9" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+            </StackPanel>
+
+            <Border Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
+                <Button Content="Search" Style="{StaticResource ButtonStyle}" Click="Search_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </StackPanel>
+
+        <DataGrid Grid.Row="2" Name="datagrid" Margin="20,20,20,0" ColumnHeaderStyle="{StaticResource ColumnHeaderStyle}" Style="{StaticResource DataGrid}">
+            
+        </DataGrid>
         
     </Grid>
 </Page>

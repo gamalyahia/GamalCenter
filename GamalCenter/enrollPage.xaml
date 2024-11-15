@@ -1,19 +1,90 @@
-﻿<Page x:Class="GamalCenter.enrollPage"
+﻿<Page x:Class="GamalCenter.EnrollPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GamalCenter"
-      mc:Ignorable="d" 
+      mc:Ignorable="d" FontFamily="Cascadia code"
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="enrollPage">
+      Title="EnrollPage">
 
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="wallpaperflare.com_wallpaper (2).jpg"/>
         </Grid.Background>
-        
-        
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="book now" Style="{StaticResource headerlabelStyle}" />
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Margin="0,0,40,0">
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Name " Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold"/>
+                        <TextBox Name="nametxt" Style="{StaticResource TextBoxStyle}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="address" Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold"/>
+                        <TextBox Name="addresstxt" Style="{StaticResource TextBoxStyle}"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" >
+                    <StackPanel Orientation="Vertical" >
+                        <Label Content="Age " Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold"/>
+                        <TextBox Name="agestxt" Style="{StaticResource TextBoxStyle}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Phone number " Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold"/>
+                        <TextBox Name="phonetxt" Style="{StaticResource TextBoxStyle}"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                
+            <StackPanel  Orientation="Vertical" Margin="0,0,20,0">
+                <Label Content="Course " Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold" />
+                    <ComboBox Name="combo" Height="50" Width="250" FontSize="24" Foreground="#FF1F1F1F">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF00F5C9" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel  Orientation="Vertical" Margin="20,0,0,0">
+                <Label Content="Grade " Style="{StaticResource headerlabelStyle}" Foreground="#FF00F5C9" FontWeight="Bold" />
+                <ComboBox Name="combo1" Height="50" Width="250" FontSize="24" Foreground="#FF1F1F1F" >
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF00F5C9" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+            </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            
+        <Border  Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
+            <Button Content="LogOut" Style="{StaticResource ButtonStyle}" Click="LogOut_Click" />
+            </Border>
+            <Border  Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
+                <Button Content="Save" Style="{StaticResource ButtonStyle}" Click="Save_Click" />
+            </Border>
+        </StackPanel>
     </Grid>
 </Page>

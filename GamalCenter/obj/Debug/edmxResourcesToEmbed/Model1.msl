@@ -5,6 +5,7 @@
       <EntityTypeMapping TypeName="GamalCenterModel.Cours">
         <MappingFragment StoreEntitySet="Courses">
           <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+          <ScalarProperty Name="Courses_Grade" ColumnName="Courses_Grade" />
           <ScalarProperty Name="Courses_name" ColumnName="Courses_name" />
           <ScalarProperty Name="Courses_price" ColumnName="Courses_price" />
         </MappingFragment>
@@ -27,7 +28,8 @@
           <ScalarProperty Name="Student_adress" ColumnName="Student_adress" />
           <ScalarProperty Name="Student_age" ColumnName="Student_age" />
           <ScalarProperty Name="Student_phone" ColumnName="Student_phone" />
-          <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+          <ScalarProperty Name="Courses_name" ColumnName="Courses_name" />
+          <ScalarProperty Name="Courses_Grade" ColumnName="Courses_Grade" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

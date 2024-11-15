@@ -4,12 +4,13 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="GamalCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="GamalCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Courses">
           <Key>
             <PropertyRef Name="Courses_ID" />
           </Key>
           <Property Name="Courses_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Courses_Grade" Type="varchar" MaxLength="100" />
           <Property Name="Courses_name" Type="varchar" MaxLength="100" />
           <Property Name="Courses_price" Type="int" />
         </EntityType>
@@ -30,9 +31,10 @@
           <Property Name="Student_adress" Type="varchar" MaxLength="100" />
           <Property Name="Student_age" Type="int" />
           <Property Name="Student_phone" Type="varchar" MaxLength="100" />
-          <Property Name="Courses_ID" Type="int" />
+          <Property Name="Courses_name" Type="int" />
+          <Property Name="Courses_Grade" Type="int" />
         </EntityType>
-        <Association Name="FK__student__Courses__3B75D760">
+        <Association Name="FK__student__Courses__40F9A68C">
           <End Role="Courses" Type="Self.Courses" Multiplicity="0..1" />
           <End Role="student" Type="Self.student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -40,7 +42,19 @@
               <PropertyRef Name="Courses_ID" />
             </Principal>
             <Dependent Role="student">
+              <PropertyRef Name="Courses_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__student__Courses__41EDCAC5">
+          <End Role="Courses" Type="Self.Courses" Multiplicity="0..1" />
+          <End Role="student" Type="Self.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Courses">
               <PropertyRef Name="Courses_ID" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="Courses_Grade" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -48,12 +62,17 @@
           <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="logindet" EntityType="Self.logindet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__student__Courses__3B75D760" Association="Self.FK__student__Courses__3B75D760">
+          <AssociationSet Name="FK__student__Courses__40F9A68C" Association="Self.FK__student__Courses__40F9A68C">
+            <End Role="Courses" EntitySet="Courses" />
+            <End Role="student" EntitySet="student" />
+          </AssociationSet>
+          <AssociationSet Name="FK__student__Courses__41EDCAC5" Association="Self.FK__student__Courses__41EDCAC5">
             <End Role="Courses" EntitySet="Courses" />
             <End Role="student" EntitySet="student" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GamalCenterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -62,9 +81,11 @@
             <PropertyRef Name="Courses_ID" />
           </Key>
           <Property Name="Courses_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Courses_Grade" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Courses_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Courses_price" Type="Int32" />
-          <NavigationProperty Name="students" Relationship="Self.FK__student__Courses__3B75D760" FromRole="Courses" ToRole="student" />
+          <NavigationProperty Name="students" Relationship="Self.FK__student__Courses__40F9A68C" FromRole="Courses" ToRole="student" />
+          <NavigationProperty Name="students1" Relationship="Self.FK__student__Courses__41EDCAC5" FromRole="Courses" ToRole="student" />
         </EntityType>
         <EntityType Name="logindet">
           <Key>
@@ -83,10 +104,12 @@
           <Property Name="Student_adress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Student_age" Type="Int32" />
           <Property Name="Student_phone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="Courses_ID" Type="Int32" />
-          <NavigationProperty Name="Cours" Relationship="Self.FK__student__Courses__3B75D760" FromRole="student" ToRole="Courses" />
+          <Property Name="Courses_name" Type="Int32" />
+          <Property Name="Courses_Grade" Type="Int32" />
+          <NavigationProperty Name="Cours" Relationship="Self.FK__student__Courses__40F9A68C" FromRole="student" ToRole="Courses" />
+          <NavigationProperty Name="Cours1" Relationship="Self.FK__student__Courses__41EDCAC5" FromRole="student" ToRole="Courses" />
         </EntityType>
-        <Association Name="FK__student__Courses__3B75D760">
+        <Association Name="FK__student__Courses__40F9A68C">
           <End Role="Courses" Type="Self.Cours" Multiplicity="0..1" />
           <End Role="student" Type="Self.student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -94,7 +117,19 @@
               <PropertyRef Name="Courses_ID" />
             </Principal>
             <Dependent Role="student">
+              <PropertyRef Name="Courses_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__student__Courses__41EDCAC5">
+          <End Role="Courses" Type="Self.Cours" Multiplicity="0..1" />
+          <End Role="student" Type="Self.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Courses">
               <PropertyRef Name="Courses_ID" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="Courses_Grade" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -102,7 +137,11 @@
           <EntitySet Name="Courses" EntityType="Self.Cours" />
           <EntitySet Name="logindets" EntityType="Self.logindet" />
           <EntitySet Name="students" EntityType="Self.student" />
-          <AssociationSet Name="FK__student__Courses__3B75D760" Association="Self.FK__student__Courses__3B75D760">
+          <AssociationSet Name="FK__student__Courses__40F9A68C" Association="Self.FK__student__Courses__40F9A68C">
+            <End Role="Courses" EntitySet="Courses" />
+            <End Role="student" EntitySet="students" />
+          </AssociationSet>
+          <AssociationSet Name="FK__student__Courses__41EDCAC5" Association="Self.FK__student__Courses__41EDCAC5">
             <End Role="Courses" EntitySet="Courses" />
             <End Role="student" EntitySet="students" />
           </AssociationSet>
@@ -117,6 +156,7 @@
             <EntityTypeMapping TypeName="GamalCenterModel.Cours">
               <MappingFragment StoreEntitySet="Courses">
                 <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+                <ScalarProperty Name="Courses_Grade" ColumnName="Courses_Grade" />
                 <ScalarProperty Name="Courses_name" ColumnName="Courses_name" />
                 <ScalarProperty Name="Courses_price" ColumnName="Courses_price" />
               </MappingFragment>
@@ -139,7 +179,8 @@
                 <ScalarProperty Name="Student_adress" ColumnName="Student_adress" />
                 <ScalarProperty Name="Student_age" ColumnName="Student_age" />
                 <ScalarProperty Name="Student_phone" ColumnName="Student_phone" />
-                <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+                <ScalarProperty Name="Courses_name" ColumnName="Courses_name" />
+                <ScalarProperty Name="Courses_Grade" ColumnName="Courses_Grade" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

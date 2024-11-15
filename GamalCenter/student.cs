@@ -19,8 +19,10 @@ namespace GamalCenter
         public string Student_adress { get; set; }
         public Nullable<int> Student_age { get; set; }
         public string Student_phone { get; set; }
-        public Nullable<int> Courses_ID { get; set; }
+        public Nullable<int> Courses_name { get; set; }
+        public Nullable<int> Courses_Grade { get; set; }
     
         public virtual Cours Cours { get; set; }
+        public virtual Cours Cours1 { get; set; }
     }
 }

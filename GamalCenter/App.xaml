@@ -10,6 +10,7 @@
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#FF1F1F1F"/>
+            <Setter Property="BorderBrush" Value="#FF00F5C9"/>
         </Style>
         <Style x:Key="ButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#00000000"/>
@@ -17,6 +18,22 @@
             <Setter Property="Width" Value="180"/>
             <Setter Property="BorderBrush" Value="#0000"/>
             <Setter Property="Foreground" Value="#FF1F1F1F"/>
+        </Style>
+        <Style x:Key="headerlabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#FFFFFEEE"/>
+        </Style>
+        <Style x:Key="ColumnHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#FF1F1F1F"/>
+            <Setter Property="Foreground" Value="#FF00F5C9"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+        <Style x:Key="DataGrid" TargetType="DataGrid">
+            <Setter Property="Foreground" Value="#FF1F1F1F"/>
+            <Setter Property="Background" Value="#FF00F5C9"/>
+            <Setter Property="Padding" Value="5"/>
         </Style>
     </Application.Resources>
 </Application>
