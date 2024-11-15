@@ -53,10 +53,14 @@
                     </ComboBox.Background>
                 </ComboBox>
             </StackPanel>
-
+            <StackPanel>
+                <Border Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
+                <Button Content="modify" Style="{StaticResource ButtonStyle}" Click="Modify_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
             <Border Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
                 <Button Content="Search" Style="{StaticResource ButtonStyle}" Click="Search_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
             </Border>
+            </StackPanel>
         </StackPanel>
 
         <DataGrid Grid.Row="2" Name="datagrid" Margin="20,20,20,0" ColumnHeaderStyle="{StaticResource ColumnHeaderStyle}" Style="{StaticResource DataGrid}">
