@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GamalCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Courses">
+          <Key>
+            <PropertyRef Name="Courses_ID" />
+          </Key>
+          <Property Name="Courses_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Courses_name" Type="varchar" MaxLength="100" />
+          <Property Name="Courses_price" Type="int" />
+        </EntityType>
+        <EntityType Name="logindet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Passwordx" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="student">
+          <Key>
+            <PropertyRef Name="Student_ID" />
+          </Key>
+          <Property Name="Student_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Student_name" Type="varchar" MaxLength="100" />
+          <Property Name="Student_adress" Type="varchar" MaxLength="100" />
+          <Property Name="Student_age" Type="int" />
+          <Property Name="Student_phone" Type="varchar" MaxLength="100" />
+          <Property Name="Courses_ID" Type="int" />
+        </EntityType>
+        <Association Name="FK__student__Courses__3B75D760">
+          <End Role="Courses" Type="Self.Courses" Multiplicity="0..1" />
+          <End Role="student" Type="Self.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Courses">
+              <PropertyRef Name="Courses_ID" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="Courses_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="GamalCenterModelStoreContainer">
+          <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="logindet" EntityType="Self.logindet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__student__Courses__3B75D760" Association="Self.FK__student__Courses__3B75D760">
+            <End Role="Courses" EntitySet="Courses" />
+            <End Role="student" EntitySet="student" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GamalCenterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cours">
+          <Key>
+            <PropertyRef Name="Courses_ID" />
+          </Key>
+          <Property Name="Courses_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Courses_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Courses_price" Type="Int32" />
+          <NavigationProperty Name="students" Relationship="Self.FK__student__Courses__3B75D760" FromRole="Courses" ToRole="student" />
+        </EntityType>
+        <EntityType Name="logindet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Passwordx" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="student">
+          <Key>
+            <PropertyRef Name="Student_ID" />
+          </Key>
+          <Property Name="Student_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Student_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Student_adress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Student_age" Type="Int32" />
+          <Property Name="Student_phone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Courses_ID" Type="Int32" />
+          <NavigationProperty Name="Cours" Relationship="Self.FK__student__Courses__3B75D760" FromRole="student" ToRole="Courses" />
+        </EntityType>
+        <Association Name="FK__student__Courses__3B75D760">
+          <End Role="Courses" Type="Self.Cours" Multiplicity="0..1" />
+          <End Role="student" Type="Self.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Courses">
+              <PropertyRef Name="Courses_ID" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="Courses_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="GamalCenterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Courses" EntityType="Self.Cours" />
+          <EntitySet Name="logindets" EntityType="Self.logindet" />
+          <EntitySet Name="students" EntityType="Self.student" />
+          <AssociationSet Name="FK__student__Courses__3B75D760" Association="Self.FK__student__Courses__3B75D760">
+            <End Role="Courses" EntitySet="Courses" />
+            <End Role="student" EntitySet="students" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GamalCenterModelStoreContainer" CdmEntityContainer="GamalCenterEntities">
+          <EntitySetMapping Name="Courses">
+            <EntityTypeMapping TypeName="GamalCenterModel.Cours">
+              <MappingFragment StoreEntitySet="Courses">
+                <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+                <ScalarProperty Name="Courses_name" ColumnName="Courses_name" />
+                <ScalarProperty Name="Courses_price" ColumnName="Courses_price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="logindets">
+            <EntityTypeMapping TypeName="GamalCenterModel.logindet">
+              <MappingFragment StoreEntitySet="logindet">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="Passwordx" ColumnName="Passwordx" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="students">
+            <EntityTypeMapping TypeName="GamalCenterModel.student">
+              <MappingFragment StoreEntitySet="student">
+                <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+                <ScalarProperty Name="Student_name" ColumnName="Student_name" />
+                <ScalarProperty Name="Student_adress" ColumnName="Student_adress" />
+                <ScalarProperty Name="Student_age" ColumnName="Student_age" />
+                <ScalarProperty Name="Student_phone" ColumnName="Student_phone" />
+                <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
