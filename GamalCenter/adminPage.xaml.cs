@@ -90,7 +90,11 @@ namespace GamalCenter
                 x.Cours1.Courses_Grade,
                 x.Cours.Courses_price
             }).ToList();
+        }
 
+        private void Modify_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ModifyPage());
         }
     }
 }
