@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GamalCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Courses">
+    <Key>
+      <PropertyRef Name="Courses_ID" />
+    </Key>
+    <Property Name="Courses_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Courses_name" Type="varchar" MaxLength="100" />
+    <Property Name="Courses_price" Type="int" />
+  </EntityType>
+  <EntityType Name="logindet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Passwordx" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="Student_ID" />
+    </Key>
+    <Property Name="Student_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Student_name" Type="varchar" MaxLength="100" />
+    <Property Name="Student_adress" Type="varchar" MaxLength="100" />
+    <Property Name="Student_age" Type="int" />
+    <Property Name="Student_phone" Type="varchar" MaxLength="100" />
+    <Property Name="Courses_ID" Type="int" />
+  </EntityType>
+  <Association Name="FK__student__Courses__3B75D760">
+    <End Role="Courses" Type="Self.Courses" Multiplicity="0..1" />
+    <End Role="student" Type="Self.student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Courses">
+        <PropertyRef Name="Courses_ID" />
+      </Principal>
+      <Dependent Role="student">
+        <PropertyRef Name="Courses_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GamalCenterModelStoreContainer">
+    <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="logindet" EntityType="Self.logindet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__student__Courses__3B75D760" Association="Self.FK__student__Courses__3B75D760">
+      <End Role="Courses" EntitySet="Courses" />
+      <End Role="student" EntitySet="student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

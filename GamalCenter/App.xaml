@@ -7,6 +7,7 @@
         <Style x:Key="TextBoxStyle" TargetType="TextBox">
             <Setter Property="Height" Value="50"/>
             <Setter Property="Width" Value="250"/>
+            <Setter Property="FontSize" Value="24"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#FF1F1F1F"/>
         </Style>

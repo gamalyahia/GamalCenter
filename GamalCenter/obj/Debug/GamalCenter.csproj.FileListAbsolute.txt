@@ -34,3 +34,15 @@ C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\Gam
 C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\GamalCenter.Properties.Resources.resources
 C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\GamalCenter.csproj.GenerateResource.cache
 C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\GamalCenter.csproj.CoreCompileInputs.cache
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\bin\Debug\EntityFramework.dll
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\bin\Debug\EntityFramework.xml
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\adminPage.g.cs
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\enrollPage.g.cs
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\SignupPage.g.cs
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\GamalCenter_Content.g.cs
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\adminPage.baml
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\enrollPage.baml
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\SignupPage.baml
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter1\GamalCenter\obj\Debug\GamalCen.1883F4D9.Up2Date
