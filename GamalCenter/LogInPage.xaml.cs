@@ -26,11 +26,11 @@ namespace GamalCenter
             InitializeComponent();
         }
 
-        private void signup_Click(object sender, RoutedEventArgs e)
+        private void Signup_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new SignupPage());
         }
-        private void login_Click(object sender, RoutedEventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
             if(string.IsNullOrWhiteSpace(usertxt.Text))
             {
@@ -54,7 +54,7 @@ namespace GamalCenter
                 if (log != null && log.username == usertxt.Text && log.Passwordx == passtxt.Text)
                 {
                     MessageBox.Show($"welcome {log.username}");
-                    this.NavigationService.Navigate(new enrollPage(log.username));
+                    this.NavigationService.Navigate(new EnrollPage(log.username));
                 }
                 else
                 {

@@ -18,13 +18,17 @@ namespace GamalCenter
         public Cours()
         {
             this.students = new HashSet<student>();
+            this.students1 = new HashSet<student>();
         }
     
         public int Courses_ID { get; set; }
+        public string Courses_Grade { get; set; }
         public string Courses_name { get; set; }
         public Nullable<int> Courses_price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<student> students { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<student> students1 { get; set; }
     }
 }

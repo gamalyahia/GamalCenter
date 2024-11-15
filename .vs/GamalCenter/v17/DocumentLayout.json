@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\enrollpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\enrollpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\enrollpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\enrollpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter1\\gamalcenter\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,34 +25,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 145,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 307,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "enrollPage.xaml",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\enrollPage.xaml",
-              "RelativeDocumentMoniker": "GamalCenter\\enrollPage.xaml",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\enrollPage.xaml",
-              "RelativeToolTip": "GamalCenter\\enrollPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T16:07:00.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "enrollPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\enrollPage.xaml.cs",
-              "RelativeDocumentMoniker": "GamalCenter\\enrollPage.xaml.cs",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\enrollPage.xaml.cs",
-              "RelativeToolTip": "GamalCenter\\enrollPage.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T16:06:28.575Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -64,38 +35,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LogInPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\LogInPage.xaml.cs",
-              "RelativeDocumentMoniker": "GamalCenter\\LogInPage.xaml.cs",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\LogInPage.xaml.cs",
-              "RelativeToolTip": "GamalCenter\\LogInPage.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwDkAAAARAAAAAAAAAA==",
+              "Title": "enrollPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\enrollPage.xaml.cs",
+              "RelativeDocumentMoniker": "GamalCenter\\enrollPage.xaml.cs",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\enrollPage.xaml.cs",
+              "RelativeToolTip": "GamalCenter\\enrollPage.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T16:05:20.362Z",
+              "WhenOpened": "2024-11-15T20:10:54.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "student.cs",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\student.cs",
+              "RelativeDocumentMoniker": "GamalCenter\\student.cs",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\student.cs",
+              "RelativeToolTip": "GamalCenter\\student.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIAwwBUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:49:35.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LogInPage.xaml",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\LogInPage.xaml",
-              "RelativeDocumentMoniker": "GamalCenter\\LogInPage.xaml",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\LogInPage.xaml",
-              "RelativeToolTip": "GamalCenter\\LogInPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T16:05:16.517Z",
+              "Title": "adminPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\adminPage.xaml.cs",
+              "RelativeDocumentMoniker": "GamalCenter\\adminPage.xaml.cs",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\adminPage.xaml.cs",
+              "RelativeToolTip": "GamalCenter\\adminPage.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAYwFUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:50:35.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\App.xaml",
-              "RelativeDocumentMoniker": "GamalCenter\\App.xaml",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\App.xaml",
-              "RelativeToolTip": "GamalCenter\\App.xaml",
+              "DocumentIndex": 3,
+              "Title": "adminPage.xaml",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\adminPage.xaml",
+              "RelativeDocumentMoniker": "GamalCenter\\adminPage.xaml",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter1\\GamalCenter\\adminPage.xaml",
+              "RelativeToolTip": "GamalCenter\\adminPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T15:49:25.317Z",
+              "WhenOpened": "2024-11-15T18:37:31.676Z",
               "EditorCaption": ""
             }
           ]
