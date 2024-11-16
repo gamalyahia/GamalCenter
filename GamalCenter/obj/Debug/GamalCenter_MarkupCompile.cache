@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter3\GamalCenter\GamalCenter\obj\Debug\
+=======
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter4\GamalCenter\GamalCenter\obj\Debug\
+>>>>>>> gamal
 GamalCenter
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter3\GamalCenter\GamalCenter\App.xaml
 6307503278
 2-1957146511
 162094948829
 18-1871192375
 adminPage.xaml;enrollPage.xaml;LogInPage.xaml;MainWindow.xaml;ModifyPage.xaml;SignupPage.xaml;
+=======
+C:\Users\owner\OneDrive\Desktop\My-GitHub\GamalCenter4\GamalCenter\GamalCenter\App.xaml
+7-1086101907
+2-1957146511
+17-1684044130
+18-911772607
+adminPage.xaml;enrollPage.xaml;LogInPage.xaml;MainWindow.xaml;ModifyCourse.xaml;ModifyPage.xaml;SignupPage.xaml;
+>>>>>>> gamal
 
 False
 
