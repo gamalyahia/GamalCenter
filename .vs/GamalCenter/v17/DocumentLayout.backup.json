@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\",
+  "WorkspaceRootPath": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter2\\gamalcenter\\gamalcenter\\modifypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\modifypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter2\\gamalcenter\\gamalcenter\\modifypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter3\\gamalcenter\\gamalcenter\\modifypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\modifypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|c:\\users\\owner\\onedrive\\desktop\\my-github\\gamalcenter2\\gamalcenter\\gamalcenter\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\gamalcenter\\modifypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\modifypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\gamalcenter\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\gamalcenter\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\gamalcenter\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{873C035A-3FF4-49D7-A73F-43A071A7FDBF}|GamalCenter\\GamalCenter.csproj|solutionrelative:gamalcenter\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 354,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,24 +34,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ModifyPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\ModifyPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\ModifyPage.xaml.cs",
               "RelativeDocumentMoniker": "GamalCenter\\ModifyPage.xaml.cs",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\ModifyPage.xaml.cs*",
-              "RelativeToolTip": "GamalCenter\\ModifyPage.xaml.cs*",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAqwIQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\ModifyPage.xaml.cs",
+              "RelativeToolTip": "GamalCenter\\ModifyPage.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T22:20:13.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T22:20:13.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ModifyPage.xaml",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\ModifyPage.xaml",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\ModifyPage.xaml",
               "RelativeDocumentMoniker": "GamalCenter\\ModifyPage.xaml",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\ModifyPage.xaml",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\ModifyPage.xaml",
               "RelativeToolTip": "GamalCenter\\ModifyPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-15T21:49:19.784Z",
@@ -61,26 +60,24 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "adminPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\adminPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\adminPage.xaml.cs",
               "RelativeDocumentMoniker": "GamalCenter\\adminPage.xaml.cs",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\adminPage.xaml.cs",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\adminPage.xaml.cs",
               "RelativeToolTip": "GamalCenter\\adminPage.xaml.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAIAxwDsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T18:50:35.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T18:50:35.057Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "adminPage.xaml",
-              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\adminPage.xaml",
+              "DocumentMoniker": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\adminPage.xaml",
               "RelativeDocumentMoniker": "GamalCenter\\adminPage.xaml",
-              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter2\\GamalCenter\\GamalCenter\\adminPage.xaml",
+              "ToolTip": "C:\\Users\\owner\\OneDrive\\Desktop\\My-GitHub\\GamalCenter3\\GamalCenter\\GamalCenter\\adminPage.xaml",
               "RelativeToolTip": "GamalCenter\\adminPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T18:37:31.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T18:37:31.676Z"
             }
           ]
         }
