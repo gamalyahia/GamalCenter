@@ -68,14 +68,9 @@ namespace GamalCenter
                 .FirstOrDefault();
 
             studentToUpdate.Student_phone = phonetxt.Text;
-
-                      
-                studentToUpdate.Courses_name = courseId;
-            
-       
-                studentToUpdate.Courses_Grade = courseGradeId;
-            
-
+            studentToUpdate.Courses_name = courseId;
+            studentToUpdate.Courses_Grade = courseGradeId;
+            db.students.AddOrUpdate(studentToUpdate);
             db.SaveChanges();
             MessageBox.Show("Data updated successfully.");
 
@@ -136,6 +131,9 @@ namespace GamalCenter
             SetData();
         }
 
-
+        private void CodifyCourse_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ModifyCourse());
+        }
     }
 }

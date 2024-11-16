@@ -42,7 +42,7 @@ namespace GamalCenter
             }
             else if(usertxt.Text == "admin" && passtxt.Text == "12345")
             {
-                MessageBox.Show("admin !! \n welcome back");
+                MessageBox.Show("admin !! \nwelcome back");
                 this.NavigationService.Navigate(new adminPage());
             }
             else

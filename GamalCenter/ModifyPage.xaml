@@ -77,8 +77,11 @@
         <Border Grid.Row="1" Grid.Column="1" Background="#FF0FF2C7" Width="200" Height="50" CornerRadius="15" Margin="10">
             <Button Content="Back" Style="{StaticResource ButtonStyle}" Click="Back_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Border>
-        
-        <DataGrid Name="datagrid" Grid.Row="2" Grid.Column="4" Grid.RowSpan="4"/>
+        <Border Grid.Row="1" Grid.Column="4" Background="#FF0FF2C7"  Width="200" Height="50" CornerRadius="15" Margin="10">
+            <Button Content="CodifyCourse" Style="{StaticResource ButtonStyle}" Click="CodifyCourse_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+
+        <DataGrid Name="datagrid" Grid.Row="2" Grid.Column="4" Grid.RowSpan="4" ColumnHeaderStyle="{StaticResource ColumnHeaderStyle}" Style="{StaticResource DataGrid}"/>
 
     </Grid>
 </Page>
