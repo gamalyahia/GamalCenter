@@ -25,6 +25,7 @@ namespace GamalCenter
         {
             InitializeComponent();
             nametxt.Text = name;
+            
             Setcombo();
         }
 

@@ -63,6 +63,7 @@ namespace GamalCenter
                 if (db.logindets.Any(x => x.username == l.username))
                 {
                     MessageBox.Show("please Enter unique username");
+                    return;
                 }
                 else
                 {

@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace GamalCenter
 {
-    /// <summary>
-    /// Interaction logic for ModifyPage.xaml
-    /// </summary>
     public partial class ModifyPage : Page
     {
         GamalCenterEntities db = new GamalCenterEntities();
@@ -49,8 +46,8 @@ namespace GamalCenter
 
             int id = int.Parse(IDtxt.Text);
            
-
             var studentToUpdate = db.students.FirstOrDefault(x => x.Student_ID == id);
+
             if (studentToUpdate == null)
             {
                 MessageBox.Show("Student not found.");

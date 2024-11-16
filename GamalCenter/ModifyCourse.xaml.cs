@@ -67,22 +67,27 @@ namespace GamalCenter
                 MessageBox.Show("Enter ID first");
                 return;
             }
-            if (string.IsNullOrWhiteSpace(nametxt.Text) && string.IsNullOrWhiteSpace(gradetxt.Text) && string.IsNullOrWhiteSpace(pricetxt.Text))
+
+            if (string.IsNullOrWhiteSpace(nametxt.Text) &&
+                string.IsNullOrWhiteSpace(gradetxt.Text) &&
+                string.IsNullOrWhiteSpace(pricetxt.Text))
             {
                 MessageBox.Show("not data to Update");
                 return;
             }
+
+
             if (string.IsNullOrWhiteSpace(nametxt.Text))
             {
-                MessageBox.Show("Course name was empty");
-                int id1 = int.Parse(IDtxt.Text);
-                var c1 = db.Courses.Where(x => x.Courses_ID == id1).Select(x => x.Courses_name).ToList();
-                Cours s = new Cours();
-                s.Courses_name = c1.ToString();
+                MessageBox.Show("Course name is empty");
+                //int id1 = int.Parse(IDtxt.Text);
+                //var c1 = db.Courses.Where(x => x.Courses_ID == id1).Select(x => x.Courses_name).ToList();
+                //Cours s = new Cours();
+                //s.Courses_name = c1.ToString();
             }
             if (string.IsNullOrWhiteSpace(gradetxt.Text))
             {
-                MessageBox.Show("Grade was empty");
+                MessageBox.Show("Grade is empty");
                 int id1 = int.Parse(IDtxt.Text);
                 var c1 = db.Courses.Where(x => x.Courses_ID == id1).Select(x => x.Courses_Grade).ToList();
                 Cours s = new Cours();
@@ -107,10 +112,10 @@ namespace GamalCenter
             {
                 c.Courses_Grade = gradetxt.Text;
             }
-            if (!string.IsNullOrWhiteSpace(nametxt.Text))
-            {
+            //if (!string.IsNullOrWhiteSpace(nametxt.Text))
+            //{
+            //}
                 c.Courses_name = nametxt.Text;
-            }
             if (!string.IsNullOrWhiteSpace(pricetxt.Text))
             { 
             c.Courses_price = int.Parse(pricetxt.Text);
